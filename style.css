@@ -1,0 +1,110 @@
+ /* CSS styles here */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(prod.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 1px 1px 8px rgb(0, 128, 111);
+    background-color: #12121268;
+    border-radius: 30px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  #add-task input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  #add-button,
+  #reset-page-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #00ffd8;
+    color: #121212;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 255, 216, 0.5);
+  }
+
+  #add-button:hover,
+  #reset-page-button:hover {
+    background-color: #1affed;
+    box-shadow: 0 0 20px rgba(0, 255, 216, 0.8);
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #777;
+  }
+
+  .task-deadline {
+    font-size: 14px;
+    color: #1d1c1c;
+  }
+
+  .complete-button,
+  .delete-button {
+    padding: 4px 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .complete-button {
+    background-color: #00ffd8;
+    color: #121212;
+  }
+
+  .delete-button {
+    background-color: #ff0033;
+    color: #fff;
+  }
+
+  .complete-button:hover,
+  .delete-button:hover {
+    opacity: 0.8;
+  }
+
+  .progress-bar {
+    height: 20px;
+    background-color: #444;
+    margin-bottom: 10px;
+  }
+
+  #progress-bar-inner {
+    height: 100%;
+    background-color: #00ffd8;
+    transition: width 0.3s;
+  }
